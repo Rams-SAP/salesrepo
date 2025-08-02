@@ -1,0 +1,50 @@
+PRODUCT_ID,TYPE_CODE,CATEGORY,DESCRIPTION,SUPPLIER_ID_CUST_ID,TAX_TARRIF_CODE,MEASURE_UNIT,WEIGHT_MEASURE,WEIGHT_UNIT,CURRENCY_CODE,PRICE,WIDTH,DEPTH,HEIGHT,DIM_UNIT
+PROD00000,B2,Electronics,Distributed high-level hub,CUST00000,947,KG,70.48,KG,USD,136.54,1.05,22.68,37.83,IN
+PROD00001,C3,Clothing,Mandatory system-worthy system engine,CUST00001,127,EA,62.41,KG,INR,497.9,42.21,4.2,9.89,IN
+PROD00002,A1,Tools,Enterprise-wide reciprocal function,CUST00002,969,L,79.57,KG,EUR,706.52,26.05,22.7,13.1,CM
+PROD00003,B2,Food,Horizontal cohesive complexity,CUST00003,577,EA,77.35,LB,INR,453.93,38.23,30.6,48.27,IN
+PROD00004,C3,Tools,Team-oriented zero administration Graphic Interface,CUST00004,503,KG,90.97,LB,USD,508.69,46.58,41.73,25.03,IN
+PROD00005,A1,Clothing,Profound 24hour core,CUST00005,161,KG,7.21,LB,INR,986.59,18.98,30.84,15.21,IN
+PROD00006,A1,Food,Reactive zero administration workforce,CUST00006,329,KG,30.59,LB,USD,596.08,38.74,3.22,24.84,IN
+PROD00007,B2,Food,Advanced 24hour encryption,CUST00007,808,KG,75.47,KG,USD,870.46,11.14,43.76,9.63,CM
+PROD00008,C3,Electronics,Function-based dynamic projection,CUST00008,192,L,88.26,LB,EUR,437.58,46.45,40.56,2.13,IN
+PROD00009,C3,Electronics,Re-contextualized transitional monitoring,CUST00009,334,L,93.39,KG,USD,717.01,33.97,28.33,12.76,CM
+PROD00010,C3,Electronics,Reduced upward-trending firmware,CUST00010,489,EA,2.87,KG,INR,97.31,40.47,12.61,42.63,IN
+PROD00011,C3,Electronics,Automated directional Graphical User Interface,CUST00011,740,L,45.2,LB,USD,781.65,25.79,48.17,4.82,CM
+PROD00012,A1,Food,Mandatory global adapter,CUST00012,140,EA,26.91,KG,EUR,862.63,41.94,8.29,28.23,CM
+PROD00013,A1,Food,Seamless tertiary data-warehouse,CUST00013,703,L,4.92,LB,INR,240.69,16.73,30.73,38.96,IN
+PROD00014,C3,Food,Universal eco-centric emulation,CUST00014,628,KG,28.72,LB,USD,423.43,28.36,5.22,8.77,CM
+PROD00015,C3,Food,Business-focused real-time core,CUST00015,988,EA,71.98,LB,USD,333.65,13.04,16.14,49.9,IN
+PROD00016,A1,Food,Cross-platform bi-directional analyzer,CUST00016,795,EA,28.35,KG,USD,415.33,41.1,12.23,39.06,IN
+PROD00017,A1,Electronics,Customizable 3rdgeneration model,CUST00017,230,KG,94.83,KG,USD,140.53,34.4,9.25,29.06,IN
+PROD00018,A1,Tools,Customer-focused heuristic analyzer,CUST00018,374,EA,81.76,LB,USD,156.29,13.44,18.56,19.2,CM
+PROD00019,B2,Clothing,Distributed system-worthy encryption,CUST00019,808,L,77.75,LB,INR,781.64,34.7,1.72,4.11,CM
+PROD00020,A1,Clothing,Optimized 5thgeneration firmware,CUST00020,594,EA,11.29,LB,USD,932.95,26.53,16.48,41.17,IN
+PROD00021,C3,Food,De-engineered system-worthy middleware,CUST00021,548,KG,80.59,KG,INR,25.75,18.13,9.39,6.94,CM
+PROD00022,C3,Electronics,Organized user-facing emulation,CUST00022,958,KG,84.75,KG,EUR,362.63,23.4,37.81,39.06,CM
+PROD00023,A1,Food,Distributed zero-defect capability,CUST00023,953,EA,7,LB,EUR,989.97,16.69,16.87,47.68,IN
+PROD00024,A1,Tools,Enhanced coherent capability,CUST00024,470,EA,42.91,KG,EUR,245.39,19.95,25.07,35.16,CM
+PROD00025,B2,Tools,Intuitive optimizing focus group,CUST00025,410,EA,70.73,LB,INR,430.65,33.4,41.67,26.53,IN
+PROD00026,B2,Tools,Down-sized executive open system,CUST00026,145,KG,58.25,LB,INR,651.67,31.66,44.45,37.43,CM
+PROD00027,B2,Electronics,Persevering encompassing flexibility,CUST00027,839,L,77.99,KG,USD,941.72,17.92,5.9,6.65,CM
+PROD00028,A1,Food,Reverse-engineered directional hub,CUST00028,666,EA,50.3,LB,INR,551.48,43.48,46.09,6.61,CM
+PROD00029,B2,Clothing,Implemented homogeneous algorithm,CUST00029,175,L,5.25,LB,EUR,721.67,32.73,46.18,11.9,CM
+PROD00030,B2,Food,Team-oriented leadingedge time-frame,CUST00030,252,EA,50.55,KG,INR,837.54,27.36,14.79,1.71,IN
+PROD00031,A1,Food,Versatile multimedia conglomeration,CUST00031,566,L,3.97,LB,INR,785.07,23.97,18.73,35.37,CM
+PROD00032,B2,Electronics,Horizontal transitional neural-net,CUST00032,589,KG,42.55,LB,USD,322.16,18.79,45.56,18.11,CM
+PROD00033,C3,Food,Team-oriented grid-enabled projection,CUST00033,148,L,37.72,KG,USD,376.01,44.99,5.1,32.23,CM
+PROD00034,B2,Electronics,Reduced intangible implementation,CUST00034,302,L,90.19,LB,EUR,608.91,3.52,17.36,33.94,CM
+PROD00035,A1,Electronics,Polarized heuristic hub,CUST00035,768,L,40.86,KG,EUR,879.35,27.68,49.44,38.24,IN
+PROD00036,A1,Electronics,Quality-focused human-resource parallelism,CUST00036,842,KG,22.08,LB,USD,773.61,22.59,22.47,25.45,IN
+PROD00037,B2,Food,Optional 5thgeneration time-frame,CUST00037,733,EA,88.17,LB,INR,159.5,40.54,25.23,44.39,IN
+PROD00038,A1,Clothing,Compatible background matrices,CUST00038,965,L,83.52,KG,USD,585.21,43.17,49.56,28.1,IN
+PROD00039,B2,Clothing,Programmable leadingedge database,CUST00039,155,EA,41.13,LB,EUR,857.23,7.43,26.6,21.43,CM
+PROD00040,C3,Electronics,Object-based asymmetric support,CUST00040,387,L,23.03,KG,EUR,552.23,49.66,18.36,42.19,CM
+PROD00041,C3,Food,Multi-lateral dynamic application,CUST00041,983,KG,13.88,LB,INR,653.53,33.75,48.68,13.22,CM
+PROD00042,B2,Clothing,Optional bottom-line knowledge user,CUST00042,553,EA,90.57,LB,USD,23.09,36.42,18.08,27.05,CM
+PROD00043,B2,Electronics,Reactive reciprocal open system,CUST00043,925,L,33.7,KG,USD,934.31,49.75,37.76,20.63,CM
+PROD00044,C3,Tools,Proactive analyzing emulation,CUST00044,665,L,28.47,KG,EUR,747.39,49.74,39.06,31.07,IN
+PROD00045,B2,Clothing,Optimized interactive open architecture,CUST00045,426,L,16.65,KG,USD,41.13,7.29,15.03,38.03,CM
+PROD00046,C3,Clothing,Persistent analyzing database,CUST00046,745,KG,91.96,KG,INR,265.56,41.1,44.63,25.5,IN
+PROD00047,A1,Electronics,Integrated leadingedge Graphic Interface,CUST00047,514,KG,57.65,KG,INR,330.08,3.72,43.61,33.03,CM
+PROD00048,A1,Clothing,Enterprise-wide modular time-frame,CUST00048,231,L,36.5,LB,EUR,111.49,32.61,37.31,10.36,IN

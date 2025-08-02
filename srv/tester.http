@@ -1,0 +1,105 @@
+###Get the service document 
+http://localhost:4004/odata/v4/CatalogServiceSo
+Authorization: Basic Ram:
+
+###Get call to show metadata of service
+http://localhost:4004/odata/v4/CatalogServiceSo/$metadata
+
+###Get all Address
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet
+
+###Get the count for an entity set
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/$count
+
+
+###Get call with pagination - $top, $skip
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet?$top=2&$skip=2
+
+###Get only few fields -$select
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet?$select=NAME1,POSTAL_CODE,STREET
+
+###Filter -$filter
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet?$filter=COUNTRY eq 'TH'
+
+###Post request to create new Addres data
+POST http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet
+Content-Type: application/json
+Authorization: Basic Ram:
+
+{
+      "ADDRESS_ID": "ADDR00050",
+      "NAME1": "Ms Dhoni",
+      "POSTAL_CODE": "560049",
+      "STREET": "Main Street",
+      "BUILDING": "2153",
+      "COUNTRY": "IN",
+      "ADDRESS_TYPE": "Home",
+      "VAL_START_DATE": "2025-01-01",
+      "VAL_END_DATE": "2050-12-01",
+      "LATITUDE": 74.976341,
+      "LONGITUDE": -143.312113
+}
+
+###Read newly created Adress
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/ADDR00050
+
+###Delete the Adress
+DELETE http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/ADDR00050
+
+###Get Sales details
+http://localhost:4004/odata/v4/CatalogServiceSo/SalesOrderSet
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vNTM4N2RmZTl0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktNDgxZTQ0ZDdiZSIsInR5cCI6IkpXVCIsImppZCI6ICJSbDBWU2l0S2tpNFZvWUFHTnVIZnJ1RkRDZytGWUlGLzAxZkIvL3BMZnRnPSJ9.eyJqdGkiOiJiYjY2NjNhNjMzMTE0MDVmYWQ5NTZmN2FmZmIwZDhlOSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiI2YTY2ZmJhNy1mNWUxLTQwNzYtODdiMi00ODEyYTliNWY2YjkiLCJ6ZG4iOiI1Mzg3ZGZlOXRyaWFsIn0sInVzZXJfdXVpZCI6IjZiMDRiYzRkLTZlMzctNGIzMi1hMTZkLTA3YTc4ZGM4NDRjMiIsInhzLnVzZXIuYXR0cmlidXRlcyI6e30sInhzLnN5c3RlbS5hdHRyaWJ1dGVzIjp7InhzLnJvbGVjb2xsZWN0aW9ucyI6WyJTQVAgSEFOQSBDbG91ZCBWaWV3ZXIiLCJTQVAgSEFOQSBDbG91ZCBBZG1pbmlzdHJhdG9yIiwiU3ViYWNjb3VudCBBZG1pbmlzdHJhdG9yIiwiU0FQIEhBTkEgQ2xvdWQgU2VjdXJpdHkgQWRtaW5pc3RyYXRvciJdfSwiZ2l2ZW5fbmFtZSI6IlRodWxhc2lyYW0iLCJmYW1pbHlfbmFtZSI6IkFtbWF0aSIsInN1YiI6IjVhZjZiZTQ3LTVlZGEtNDY4Yy04YTNiLWNlYTRlNGU1YmNiZSIsInNjb3BlIjpbIm9wZW5pZCJdLCJjbGllbnRfaWQiOiJzYi1zYWxlc2RldGFpbHMtNTM4N2RmZTl0cmlhbC1kZXYhdDQ4OTM4MCIsImNpZCI6InNiLXNhbGVzZGV0YWlscy01Mzg3ZGZlOXRyaWFsLWRldiF0NDg5MzgwIiwiYXpwIjoic2Itc2FsZXNkZXRhaWxzLTUzODdkZmU5dHJpYWwtZGV2IXQ0ODkzODAiLCJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ1c2VyX2lkIjoiNWFmNmJlNDctNWVkYS00NjhjLThhM2ItY2VhNGU0ZTViY2JlIiwib3JpZ2luIjoic2FwLmRlZmF1bHQiLCJ1c2VyX25hbWUiOiJ0aHVsYXNpcmFtLmFtbWF0aTdAZ21haWwuY29tIiwiZW1haWwiOiJ0aHVsYXNpcmFtLmFtbWF0aTdAZ21haWwuY29tIiwiYXV0aF90aW1lIjoxNzUzOTg1OTk1LCJyZXZfc2lnIjoiMzllN2YzMGMiLCJpYXQiOjE3NTM5ODU5OTUsImV4cCI6MTc1Mzk4Njg5NSwiaXNzIjoiaHR0cHM6Ly81Mzg3ZGZlOXRyaWFsLmF1dGhlbnRpY2F0aW9uLnVzMTAuaGFuYS5vbmRlbWFuZC5jb20vb2F1dGgvdG9rZW4iLCJ6aWQiOiI2YTY2ZmJhNy1mNWUxLTQwNzYtODdiMi00ODEyYTliNWY2YjkiLCJhdWQiOlsic2Itc2FsZXNkZXRhaWxzLTUzODdkZmU5dHJpYWwtZGV2IXQ0ODkzODAiLCJvcGVuaWQiXX0.LxGZ92yBpMzl8_0SnwLKEtHQbP7HXQACyKlyXoRJAQ4Ckwd1AyqshzdKGTaTV5KMgq5_0v0prFnfaTIGOzpCrnnJj3VjGJGUEX0kYZF9U1dT5VEaJ-1DcZ9uszcHUlw_z9duO9DOcycM5s7_oym0P2HZfdZInKQR4WxbgVawkcUgUGhrsAvW9yRVDO4-7Wmxj03Af3k7oZ6w7P6IO4pHvgXea1I8qZGbQjqeqUmn9mg86Zm22a_DJl-43x0XFrB7l7PGVrqcmCTdLTLZLY-VZtTiJKxBMSsGMzWa02OGSmdVPDggS-kZFDWeZK1PzFGFStf4NI7C3odFKfmxYYbWAw
+
+###Post Sales order data
+POST http://localhost:4004/odata/v4/CatalogServiceSo/SalesOrderSet
+Content-Type: application/json
+Authorization: Basic Ram:
+
+{
+      "createdAt": "2024-09-29",
+      "createdBy": "user_7",
+      "modifiedAt": "2025-07-17",
+      "modifiedBy": "user_9",
+      "SO_ID": "",
+      "CUST_ID_CUST_ID": "C000000041",
+      "LIFECYCLE_STATUS": "C",
+      "OVERALL_STATUS": "O"
+    }
+
+###Call with Asscoiation items
+http://localhost:4004/odata/v4/CatalogServiceSo/SalesOrderSet?$expand=Items
+
+###Deep insert
+POST http://localhost:4004/odata/v4/CatalogServiceSo/SalesOrderSet
+Content-Type: application/json
+
+{
+      "createdAt": "2024-09-29",
+      "createdBy": "user_7",
+      "modifiedAt": "2025-07-17",
+      "modifiedBy": "user_4",
+      "SO_ID": "SO00052",
+      "CUST_ID_CUST_ID": "C000000041",
+      "LIFECYCLE_STATUS": "C",
+      "OVERALL_STATUS": "O",
+      "Items": [
+        {
+          "SO_ID_SO_ID": "SO00052",
+          "SO_ITEM": "10",
+          "MATERIAL_MATERIAL": "000000004000056611",
+          "QUANTITY": "3",
+          "UOM": "EA",
+          "NETPRICE": 202.5,
+          "PRODUCT_ID_PRODUCT_ID": "PROD00000"
+        },
+        {
+          "SO_ID_SO_ID": "SO00052",
+          "SO_ITEM": "20",
+          "MATERIAL_MATERIAL": "000000004000056612",
+          "QUANTITY": "2",
+          "UOM": "EA",
+          "NETPRICE": 199,
+          "PRODUCT_ID_PRODUCT_ID": "PROD00001"
+        }
+      ]
+}

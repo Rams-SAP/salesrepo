@@ -1,0 +1,71 @@
+{
+  "name": "salesdetails",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4",
+    "@sap/xssec": "^4",
+    "@cap-js/hana": "^2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.13.0",
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": ">=8"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-managesales": "cds watch --open managesales/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "[production]": {
+          "strategy": "JWT"
+        },
+        "[development]": {
+          "strategy": "mocked",
+          "users": {
+            "Ram": {
+              "roles": [
+                "Viewer",
+                "Editor"
+              ],
+              "userAttributes": {
+                "Country": [
+                  "US"
+                ]
+              }
+            },
+            "Tej": {
+              "roles": [
+                "Viewer",
+                "Editor"
+              ],
+              "userAttributes": {
+                "Country": [
+                  "US",
+                  "IN",
+                  "JP"
+                ]
+              }
+            }
+          }
+        },
+        "kind": "xsuaa"
+      }
+    },
+    "sql": {
+      "native_hana_associations": false
+    }
+  },
+  "sapux": [
+    "app/managesales"
+  ]
+}
