@@ -238,8 +238,3 @@ annotate service.ProductSet with @(UI.Identification: [{
     Value: ProductName,
 }, ]);
 
-annotate service.BusinessPartnerSet with {
-
-COMPANY_NAME @UI.AdaptationHidden: true;
-
-}
