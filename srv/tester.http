@@ -8,6 +8,9 @@ http://localhost:4004/odata/v4/CatalogServiceSo/$metadata
 ###Get all Address
 http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet
 
+###Get Products
+http://localhost:4004/odata/v4/CatalogServiceSo/ProductSet
+
 ###Get the count for an entity set
 http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/$count
 
@@ -41,7 +44,7 @@ Authorization: Basic Ram:
 }
 
 ###Read newly created Adress
-http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/ADDR00050
+http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/ADDR00000
 
 ###Delete the Adress
 DELETE http://localhost:4004/odata/v4/CatalogServiceSo/AddressSet/ADDR00050
@@ -65,6 +68,9 @@ Authorization: Basic Ram:
       "LIFECYCLE_STATUS": "C",
       "OVERALL_STATUS": "O"
     }
+
+###Get Sales
+http://localhost:4004/odata/v4/CatalogServiceSo/SalesOrderSet
 
 ###Call with Asscoiation items
 http://localhost:4004/odata/v4/CatalogServiceSo/SalesOrderSet?$expand=Items
